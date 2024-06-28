@@ -35,19 +35,19 @@ int main()
                 continue;
             }
 
-            char *dnsr;
+            char *rtype;
             void *addr;
             if (p->ai_family == AF_INET) {
-                dnsr = "A";
+                rtype = "A";
                 addr = &(((struct sockaddr_in *)(p->ai_addr))->sin_addr);
             } else {
-                dnsr = "AAAA";
+                rtype = "AAAA";
                 addr = &(((struct sockaddr_in6 *)(p->ai_addr))->sin6_addr);
             }
 
             char ipstr[INET6_ADDRSTRLEN];
             inet_ntop(p->ai_family, addr, ipstr, sizeof(ipstr));
-            printf("%s %s %s\n", node, dnsr, ipstr);
+            printf("%s %s %s\n", node, rtype, ipstr);
     }
 
     freeaddrinfo(res);
