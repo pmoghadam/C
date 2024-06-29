@@ -1,6 +1,7 @@
-// Filename: getaddrinfo-01.c
+// Filename: resolve-domain.c
 // Description: using getaddrinfo() to resolve domain names
-// Compile: gcc -std=c99 -Wall -Wextra -Werror -pedantic -o getaddrinfo-01 getaddrinfo-01.c
+// Compile: gcc -std=c99 -Wall -Wextra -Werror -pedantic -o resolve-domain resolve-domain.c
+
 /* Output:
 www.yahoo.com A 212.82.116.206
 www.yahoo.com A 212.82.116.204
