@@ -1,6 +1,6 @@
-// getprotoent-01.c
+// getprotoent.c
 // Description: read entire /etc/protocols database with getprotoent()
-// Compile: gcc -std=c99 -Wall -Wextra -Werror -pedantic -o getprotoent-01 getprotoent-01.c
+// Compile: gcc -std=c99 -Wall -Wextra -Werror -pedantic -o getprotoent getprotoent.c
 
 /* 
        man 3 getprotoent
