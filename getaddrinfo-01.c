@@ -1,6 +1,12 @@
 // Filename: getaddrinfo-01.c
 // Description: using getaddrinfo() to resolve domain names
 // Compile: gcc -std=c99 -Wall -Wextra -Werror -pedantic -o getaddrinfo-01 getaddrinfo-01.c
+/* Output:
+www.yahoo.com A 212.82.116.206
+www.yahoo.com A 212.82.116.204
+www.yahoo.com AAAA 2a00:1288:80:807::1
+www.yahoo.com AAAA 2a00:1288:80:807::2
+*/
 
 #define _POSIX_C_SOURCE 200112L
 
