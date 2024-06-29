@@ -1,5 +1,6 @@
-// getaddrinfo.c
-// gcc -std=c99 -Wall -Wextra -Werror -pedantic -o getaddrinfo getaddrinfo.c
+// Filename: getaddrinfo-01.c
+// Description: using getaddrinfo() to resolve domain names
+// Compile: gcc -std=c99 -Wall -Wextra -Werror -pedantic -o getaddrinfo-01 getaddrinfo-01.c
 
 #define _POSIX_C_SOURCE 200112L
 
